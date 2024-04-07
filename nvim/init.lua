@@ -4,8 +4,8 @@ local opt = vim.o
 local g = vim.g
 
 -- <leader> key. Defaults to `\`. Some people prefer space.
--- g.mapleader = ' '
--- g.maplocalleader = ' '
+g.mapleader = ' '
+g.maplocalleader = ' '
 
 opt.compatible = false
 
@@ -13,6 +13,9 @@ opt.compatible = false
 if fn.has('termguicolors') then
   opt.termguicolors = true
 end
+
+-- Enable a color scheme
+cmd.colorscheme "catppuccin"
 
 -- See :h <option> to see what the options do
 
