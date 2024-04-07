@@ -85,7 +85,8 @@ with final.pkgs.lib; let
     # language servers, etc.
     lua-language-server
     nil # nix LSP
-    ripgrep
+    ripgrep # dependency of telescope
+    gopls # go lsp
   ];
 in {
   # This is the neovim derivation
